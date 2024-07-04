@@ -1,0 +1,44 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: var(--sidebar-width);
+  padding: 20px 10px;
+  background: var(--inverted-bg-color);
+  transition: max-width 0.3s;
+
+  &__btn {
+    position: absolute;
+    right: -32px;
+    bottom: 30px;
+  }
+
+  &__switchers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+  }
+
+  &__switchers-item {
+    width: 50px;
+    transition: 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.collapsed {
+    max-width: var(--sidebar-width-collapsed);
+
+    .sidebar__switchers {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

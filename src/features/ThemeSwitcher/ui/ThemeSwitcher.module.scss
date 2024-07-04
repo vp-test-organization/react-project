@@ -1,0 +1,8 @@
+.theme-switcher {
+  max-width: 50px;
+  color: var(--bg-color);
+
+  &.light_theme {
+    color: #FFC700;
+  }
+}

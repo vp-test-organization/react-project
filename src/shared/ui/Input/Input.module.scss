@@ -1,0 +1,35 @@
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	&__label {
+		display: block;
+	}
+
+	&__item {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		background-color: transparent;
+		border: 2px solid var(--primary-color);
+		border-radius: 5px;
+		color: var(--inerted-theme-color);
+
+		&:focus {
+			outline: none;
+			border-color: var(--inverted-bg-color);
+		}
+		&::placeholder {
+			color: var(--inerted-theme-color);
+			opacity: .5;
+		}
+		&:read-only {
+			pointer-events: none;
+		}
+	}
+
+	&.readonly {
+		opacity: .8;
+	}
+}

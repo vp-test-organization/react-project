@@ -1,0 +1,32 @@
+.text {
+
+	&__title {
+		font: var(--font-l);
+		color: var(--primary-color);
+	}
+
+	&__description {
+		font: var(--font-m);
+		color: var(--secondary-color);
+	}
+
+	&--error {
+		.text__title {
+			color: red;
+		}
+
+		.text__description {
+			color: darkred;
+		}
+	}
+
+	.left {
+		text-align: left;
+	}
+	.right {
+		text-align: right;
+	}
+	.center {
+		text-align: center;
+	}
+}

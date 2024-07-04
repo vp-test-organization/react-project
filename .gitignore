@@ -1,0 +1,10 @@
+/build
+node_modules
+/storybook-static
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*storybook.log
