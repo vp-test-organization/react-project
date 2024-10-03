@@ -7,6 +7,8 @@ const AboutPage = memo(() => {
 			<Container>
 				<h1 className='section-title'>About page</h1>
 				<p>Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet.</p>
 			</Container>
 		</section>
 	);
