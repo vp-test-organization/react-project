@@ -7,6 +7,8 @@ const MainPage = memo(() => {
 		<section>
 			<Container>
 				<h1 className='section-title'>Main Page</h1>
+				<h2 className='section-title'>Main Page</h2>
+				<h3 className='section-title'>Main Page</h3>
 				<Counter/>
 			</Container>
 		</section>
